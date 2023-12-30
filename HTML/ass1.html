@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>booking page</title>
+</head>
+<body>
+<SCRIPT>
+function SYAM()
+{ var I=document.forms[0].abc.value;
+  localStorage.pas=I;
+ console.log(I);
+
+ var t=document.forms[0].def.value;
+localStorage.w=t;
+ console.log(t);
+
+var r=document.forms[0].phone.value;
+localStorage.o=r;
+ console.log(r);
+
+var u=document.forms[0].selection.value;
+localStorage.d=u;
+ console.log(u);
+}
+
+function give_op()
+{
+  var f=document.getElementByName("output");
+  var f[0].innerHTML=localStorage.pas;
+  var f[1].innerHTML=localStorage.w;
+ var f[2].innerHTML=localStorage.o;
+ var f[3].innerHTML=localStorage.d;
+ 
+ 
+}
+
+</script>
+<FIELDSET>
+<form>
+<center>
+MOVIE NAME:  &nbsp; &nbsp;<input name="def" type="text" name=placeholder="enter your name" ><BR>
+CUSTOMER NAME: <INPUT TYPE="TEXT" name="abc" PLACEHOLDER="ENTER YR NUMBER" &NBSP;><BR>
+<LABEL>MOBILE NUMBER:</LABEL>
+<INPUT TYPE="TEXT" name="phone" placeholder="enter your number" ><BR>
+NO.OF.TICKETS<SELECT ID="COUNT " name="selection"> 
+   <OPTION VALUE "1">1</OPTION>
+   <OPTION VALUE "2">2</OPTION>
+   <OPTION VALUE="1"> 3</OPTION>
+  <OPTION VALUE="2">4</OPTION>
+   <OPTION VALUE="12">5</OPTION><BR>
+<BR><INPUT TYPE="BUTTON" value="SUBMIT" ONCLICK="SYAM()" />
+<input type="button" value="get" onclick="give_op()" />
+
+</center>
+
+</form>
+
+<p name="output">orders details</p>
+<p name="output"> </p>
+<p name="output"> </p>
+<p name="output"> </p>
+</FIELDSET>
+<h1>your name</h1>
+</body>
+<html>

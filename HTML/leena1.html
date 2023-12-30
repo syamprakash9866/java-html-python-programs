@@ -1,0 +1,37 @@
+<html><body>
+<script>
+    function saveData()
+    {
+        var i=document.forms[0].isbnNo.value;
+        localStorage.isbn=i;
+        console.log(i);
+        var t=document.forms[0].bookTitle.value;
+        console.log(t);
+        localStorage.title=t;
+
+    }
+
+    function getData()
+    {
+        para=document.getElementsByName("data");
+        para[0].innerHTML =localStorage.isbn;
+        para[1].innerHTML =localStorage.title;
+
+    }
+
+</script>
+<center><b>BOOK DETAILS</b><br><br>
+<form>
+    ISBN No: &nbsp;&nbsp;<input type="text" name="isbnNo" placeholder="ISBN No" required/><br><br>  
+    Book Title: &nbsp;&nbsp;<input type="text" name="bookTitle" placeholder="Enter book title" required/><br><br>
+    <input type="button" value="save" onclick="saveData()"/>&nbsp;&nbsp;
+    <input type="button" value="Get" onclick="getData()"/>&nbsp;&nbsp;
+    <input type="Reset" value="reset"/>
+
+</center>
+</form>
+<br><br><p name="data">BOOK DATA</p>
+<br><br><p name="data">SECOND PARAGRAPH</p>
+
+</body>
+</html>

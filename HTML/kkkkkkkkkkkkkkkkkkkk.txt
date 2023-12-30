@@ -1,0 +1,23 @@
+package demos1;
+import java.sql.*;
+public class demos2 {
+	
+	
+     public static void main(String[]args) throws Exception
+
+	{
+		  String driver="oracle.jdbc.driver.OracleDriver";
+		  String url="jdbc:oracle:thin:@localhost:1521:xe";
+		  String user="system";
+		  String pass="system";
+		  
+		   Class.forName(driver);
+		   
+		   DriverManager.getConnection(url,user,pass);
+		    System.out.println("succesfull");
+		  
+	}
+	}
+
+
+

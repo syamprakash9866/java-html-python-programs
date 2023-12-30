@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>booking  page</title>
+</head>
+<body style="background-image:url(PPPPP.jpg)">
+<script>
+    function savedata()
+{  
+ 	var i=document.forms[0].movname.value;
+   		localStorage.strg=i;
+  		console.log(i);
+  
+	var j=document.forms[0].cusname.value;
+            localStorage.strg1=j;
+ 		console.log(j);
+	var k=document.forms[0].num.value;
+            localStorage.strg2=k;
+		console.log(k);
+	var l=document.forms[0].id.value;
+            localStorage.strg3=l;
+		console.log(l);
+
+
+    var p=document.getElementsByName("m");
+     p[0].innerHTML=localStorage.strg;
+     p[1].innerHTML=localStorage.strg1;
+	p[2].innerHTML=localStorage.strg2;
+	p[3].innerHTML=localStorage.strg3;
+}
+</script>
+
+<center><h3>ticket booking service</h3></center>
+<fieldset ><LEGEND>ticket booking service</LEGEND>
+<form ><center>
+
+<label>movie name:</label> &nbsp;&nbsp;
+<input type="text" name="movname" placeholder="enter movie name" />&nbsp;&nbsp;<br>
+
+<label>customer name: </label>
+<input type="text" name="cusname" placeholder="enter cus name" /><br>
+
+<label>mobile number: </label>
+<input type="number" name="num" placeholder="enter number" /><br>
+
+<label>no.of.tickets: </label>
+<select name="id" id="tickets">
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+</select>
+</center>
+</form>
+</fieldset>
+
+<center><input type="button" value="book" onclick="savedata()" /> </center>
+         <center> <P>NEXT week POLAMAA?<P>
+         <INPUT type="checkbox" >polamehh</input>
+         <input type="checkbox" >venammmmmmmm</input></center>
+
+
+<center><p> your tickets details</p>
+<p name="m">movie_name:</p>
+<p name="m">cus_name:</p>
+<p name="m">cus_num:</p>
+<p name="m">tickets:</p>
+
+
+</body>
+</html>

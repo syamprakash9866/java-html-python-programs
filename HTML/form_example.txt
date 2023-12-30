@@ -1,0 +1,10 @@
+<html>
+<head>page</head>
+ <body>
+<form >
+<lable>usr_name</label>
+<input type='text' required />
+<label>password</label><br>
+</form>
+</body>
+</html>

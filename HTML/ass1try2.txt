@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>booking  page</title>
+</head>
+<body>
+<h3>ticket booking service</h3>
+
+<form>
+
+
+
+<label>customer name: </label>
+<input type="text" name="cusname" placeholder="enter cus name" />
+
+<label>mobile number: </label>
+<input type="number" name="num" placeholder="enter number" />
+
+<label>no.of.tickets: </label>
+<select id="tickets">
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+</select>
+
+</form>
+</body>
+</html>
