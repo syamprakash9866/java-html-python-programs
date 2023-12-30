@@ -1,0 +1,18 @@
+list2=[]
+strr=int(input("how mnt numbers you wnt to enter: "))
+
+for k in  range(strr):
+ list2.append(int(input()))
+ 
+print("unsorted order:",list2)
+for y in range(len(list2)-1):
+
+ for x in range (len(list2)-1):
+   if list2[x]>list2[x+1]:
+     list2[x],list2[x+1]=list2[x+1],list2[x]
+   
+        
+print("sorted order: ",list2)
+     
+     
+     

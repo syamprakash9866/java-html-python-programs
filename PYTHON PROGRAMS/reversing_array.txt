@@ -1,0 +1,19 @@
+def reverse_array(arr):
+    start = 0
+    end = len(arr) - 1
+    
+    while start < end:
+    
+        arr[start], arr[end] = arr[end], arr[start]
+        
+        start = start+1
+        end =end -1
+    
+    return arr
+
+
+strr=input("entet number uding spve")
+user_inputs=list(map(int,strr.split()))
+
+res=reverse_array(user_inputs)
+print(res)

@@ -1,0 +1,18 @@
+def word(string):
+ rev_string=''
+ for i in string:
+    rev_string=i+rev_string
+ return rev_string
+
+strr=input("enter string: ")
+res=word(strr)
+print("ur reverse word is ",res)
+
+
+
+
+
+
+
+
+

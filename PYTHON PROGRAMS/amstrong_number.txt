@@ -1,0 +1,26 @@
+def find(string):
+ num=int(string)
+ num2=num
+ 
+ n=len(string)
+ summ=0
+ digit=0
+ while  num!=0:
+    digit=num%10
+    
+    summ=summ+(digit**n)
+    
+    num=num//10
+    print(summ)
+    
+ if num2==summ:
+    print("itis mstyrong number")
+ else:
+    print("not mstropng number")
+
+
+strr=input(" enter NUMBER: ")
+find(strr)
+
+
+     

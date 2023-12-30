@@ -1,0 +1,12 @@
+num1 = input("Enter numbers separated by spaces: ")
+user_array = list(map(int, num1.split()))
+
+num2 = input("Enter numbers separated by spaces: ")
+user_array = list(map(int, num2.split()))
+list1=[]
+for num in num1:
+    if num not in num2:
+        list1.append(num)
+        
+print(list1)
+        

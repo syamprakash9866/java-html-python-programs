@@ -1,0 +1,40 @@
+pallidrom for string 
+
+
+word=input("enter a string")
+rev_word=word[::-1]
+print(rev_word)
+if word==rev_word:
+ print("ur word is plldrion")
+else :
+print("ur word is not plldrom")
+___________________________________________________________________________________________________________________________________
+
+pallindrom for number
+
+
+num=int(input("enter a number: "))
+conword=str(num)
+print(type(conword)
+
+rev_number=conword(::-1)
+if rev_number==conword:
+ print("plldrom"
+else
+ print("not plldrom")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

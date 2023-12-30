@@ -1,0 +1,17 @@
+"""strr=input("enter  e line: ")
+list2=[]
+for chr in strr:
+    if chr not in list2:
+        list2.append(chr)
+        print(chr,"occured",strr.count(chr),"times")
+
+
+strr=input("enter  e line: ")
+d={}
+for chr in strr:
+    d[chr]=d.get(chr,0)+1
+print(d)
+for key,value in d.items():
+    print(key,"ocuured",value,"times")
+
+"""

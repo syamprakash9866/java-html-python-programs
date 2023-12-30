@@ -1,0 +1,14 @@
+def line(string):
+    new_word=''
+    new_line=''
+    rev_line=string.split()
+   
+    for word in rev_line:
+        new_word=word[::-1]
+        new_line=new_word+" "+new_line
+    return new_line
+    
+
+strr=input("enter e line: ")
+res=line(strr)
+print(res)

@@ -1,0 +1,18 @@
+strr=input("enter w limr: ")
+new_string=strr.lower()
+countt=0
+summ=0
+print(new_string)
+l=["a","e","i","o","u"]
+for word in new_string:
+    if word in l:
+        countt=countt+1
+    else: 
+            summ=summ+1
+print("vowels: ",countt,"consonents: ",summ)
+
+
+
+
+
+
